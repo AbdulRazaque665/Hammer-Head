@@ -1,0 +1,16 @@
+.logo-text{
+  color: #1C64EA;
+}
+.button-color{
+    background-color: #1C64EA !important;
+    padding:8px 12px !important;
+    transition:all 0.2s ease-in;
+}
+.button-color:hover{
+    filter: drop-shadow(1px 2px 0.20rem rgba(0,0,0,0.5));}
+.hover:hover{
+color: #1C64EA !important;
+}
+.hover{
+    transition:all 0.3s;
+}
