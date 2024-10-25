@@ -2,7 +2,6 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import AboutImg from "../../asset/About.png";
 import { Box, Typography } from "@mui/material";
-import Card from "@mui/material/Card";
 import "./about.css";
 
 const AboutsUs = () => {
