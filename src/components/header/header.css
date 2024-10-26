@@ -1,5 +1,6 @@
 .logo-text{
-  color: #1C64EA;
+  color: #1C64EA !important;
+
 }
 .button-color{
     background-color: #1C64EA !important;
@@ -7,10 +8,14 @@
     transition:all 0.2s ease-in;
 }
 .button-color:hover{
-    filter: drop-shadow(1px 2px 0.20rem rgba(0,0,0,0.5));}
+    filter: drop-shadow(1px 2px 0.20rem rgba(0,0,0,0.5));
+}
 .hover:hover{
 color: #1C64EA !important;
 }
 .hover{
     transition:all 0.3s;
+}
+.btn-size{
+    width: 10rem !important;
 }

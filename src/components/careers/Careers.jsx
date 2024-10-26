@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography'
 
 const Careers = () => {
   return (
-    <div>
+    <div className="background-1">
       <Typography variant="h1" color="initial">Careers</Typography>
       
     </div>

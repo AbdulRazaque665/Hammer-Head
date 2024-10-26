@@ -27,7 +27,7 @@ const Header = () => {
 
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid background-1">
     <AppBar position="static" className="bg-transparent shadow-none">
       <Container maxWidth="">
         <Toolbar disableGutters>
@@ -37,7 +37,7 @@ const Header = () => {
             variant="h6"
             noWrap
             component="a"
-            className=""
+            className="logo-text"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -77,13 +77,14 @@ const Header = () => {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
-              <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/aboutus">About Us</NavLink></li>
-                <li><NavLink to="/whyus">Why Us</NavLink></li>
-                <li><NavLink to="/careers">Careers</NavLink></li>
-                <li><NavLink to="/contactus">Contact Us</NavLink></li>
+              <ul className="list-unstyled py-2 ps-3 pe-5">
+                <li><NavLink className="text-decoration-none" to="/">Home</NavLink></li>
+                <li><NavLink className="text-decoration-none" to="/aboutus">About Us</NavLink></li>
+                <li><NavLink className="text-decoration-none" to="/whyus">Why Us</NavLink></li>
+                <li><NavLink className="text-decoration-none" to="/careers">Careers</NavLink></li>
+                <li><NavLink className="text-decoration-none" to="/contactus">Contact Us</NavLink></li>
               </ul>
+              <button  className="d-block d-md-none d-lg-none  mx-auto border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button>
             </Menu>
           </Box>   
           <img src={Hammerlogo} className='d-md-none d-lg-none d-sm-block me-2' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -91,17 +92,17 @@ const Header = () => {
             variant="h5"
             noWrap
             component="a"
+            className="logo-text"
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontWeight: 700,
-              color: 'black',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            HammerHead
           </Typography>
           <Box className="" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           <ul className='mx-auto d-flex justify-content-center mb-0  list-unstyled'>
@@ -113,7 +114,7 @@ const Header = () => {
               </ul>
           </Box>
           <Box>
-            <button  className="border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button>
+            <button  className="d-none d-md-block d-lg-block border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button>
           </Box>
         </Toolbar>
       </Container>
