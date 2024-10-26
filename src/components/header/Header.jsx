@@ -28,8 +28,8 @@ const Header = () => {
 
   return (
     <div className="container-fluid background-1">
-    <AppBar position="static" className="bg-transparent shadow-none">
-      <Container maxWidth="">
+    <AppBar position="static" className="bg-transparent shadow-none ">
+      <Container maxWidth="" >
         <Toolbar disableGutters>
         <NavLink className="d-flex align-items-center text-decoration-none" to="/">
         <img width="35px" src={Hammerlogo} className="d-lg-block d-md-block d-none me-2" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

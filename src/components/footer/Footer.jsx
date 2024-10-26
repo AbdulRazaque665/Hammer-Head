@@ -11,14 +11,14 @@ const Footer = () => {
       <div className='container'>
       <Divider variant="middle" component="" className="blue-line"/>
        <div className="row gy-5">
-        <div className="col-sm-12 col-md-12 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-5">
           <Typography variant="h5" className="footer-txt fs-2">Get Local Info</Typography>
           <Typography variant="h6" className="footer-txt my-4 fs-5">At hammerhead, we specialize in delivering high-quality construction services with a commitment to excellence and innovation. We take pride in our strong client relationships and community engagement. Contact us today to start building your dream!</Typography>
-          <Typography variant="h6" className="footer-txt text-nowrap mt-5"> <Icon className="me-2 fs-3" icon="gridicons:location"  /> Cooper Road, Garhi Shahu, Lahore, Punjab</Typography>
+          <Typography variant="h6" className="footer-txt mt-5"> <Icon className="me-2 fs-3" icon="gridicons:location"  /> Cooper Road, Garhi Shahu, Lahore, Punjab</Typography>
           <Typography variant="h6" className="footer-txt text-nowrap"> <Icon className="me-2 fs-3" icon="skill-icons:gmail-light" /> supporthammerhead@gmail.com</Typography>
          
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-4 ">
+        <div className="col-sm-12 col-md-12 col-lg-3 ">
           <Typography variant="h5" className="footer-txt fs-2">Useful Links</Typography>
           <ul className="list-unstyled d-flex flex-column justify-content-between">
           <li className='my-2 fs-5'><NavLink className=" footer-txt text-decoration-none" to="/">Home</NavLink></li>

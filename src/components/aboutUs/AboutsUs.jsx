@@ -7,26 +7,26 @@ import "./about.css";
 const AboutsUs = () => {
   return (
     <>
-      <Box>
-        <Grid
-          container
-          className="mt-5 pt-lg-5 px-4 pe-md-3 px-lg-4 d-flex justify-content-center align-items-center"
+      <Box className="background-1 bg-img" sx={{paddingBottom:"120px",paddingTop:"50px",}}>
+        <div className="container-fluid">
+        <div
+          className="row pt-lg-5 px-4 pe-md-3 px-lg-4 d-flex justify-content-center align-items-center flex-column-reverse flex-md-row flex-lg-row"
         >
-          <Grid item xs={12} sm={6} md={5} className="text-center mb-5 mb-md-0">
+          <div className=" mb-5 mb-md-0 mt-5 col-12  col-sm-12 col-md-6 col-lg-4 text-center text-md-start text-lg-start">
             <img src={AboutImg} alt="About image" />
-          </Grid>
+          </div>
 
-          <Grid item xs={12} sm={6} md={6}>
+          <div className="mt-3 col-12 col-sm-12 col-md-6 col-lg-7">
             <Typography variant="h3" className="fw-medium mb-2">
               About us
             </Typography>
-            <Typography variant="h5" className="fw-medium mb-3 mb-md-0 mb-lg-3">
+            <Typography variant="h4" className="fw-medium mb-3 mb-md-0 mb-lg-3 my-4">
               Our construction company had been founded 10 years, at every peak
               of building
             </Typography>
             <Typography
-              variant="h6"
-              className="fw-normal lh-base mt-3 mt-md-2 mt-lg-3"
+              variant="h5"
+              className="fw-normal lh-base mt-4 mt-md-2 mt-lg-3 mb-3"
             >
               Welcome to [Your Company Name], established in [Year], where we
               specialize in delivering high-quality construction services
@@ -35,17 +35,18 @@ const AboutsUs = () => {
               We offer a wide range of services, including residential,
               commercial, and renovation projects.
             </Typography>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
+        </div>
 
         <Box className="container m-auto">
           <Typography variant="h3" className="mt-5 text-center text-blue">
             Our Process
           </Typography>
-          <div className="mt-5 d-flex justify-content-center justify-content-lg-between align-items-center flex-wrap gap-4">
+          <div className="mt-5 row justify-content-center align-items-center gap-4 ">
             {/* card 1 */}
             <div
-              className="light-blu rounded-5 p-4 text-center"
+              className="light-blu rounded-5 p-4 text-center col-6 col-md-4 col-lg-3"
               style={{
                 width: "260px",
                 height: "270px",
@@ -70,7 +71,7 @@ const AboutsUs = () => {
 
             {/* card 2 */}
             <div
-              className="light-blu rounded-5 p-4 text-center"
+              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3"
               style={{
                 width: "260px",
                 height: "270px",
@@ -95,7 +96,7 @@ const AboutsUs = () => {
 
             {/* card 3 */}
             <div
-              className="light-blu rounded-5 p-4 text-center"
+              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3"
               style={{
                 width: "260px",
                 height: "270px",
@@ -119,7 +120,7 @@ const AboutsUs = () => {
 
             {/* card 4 */}
             <div
-              className="light-blu rounded-5 p-4 text-center"
+              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3"
               style={{
                 width: "260px",
                 height: "270px",

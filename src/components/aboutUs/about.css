@@ -4,3 +4,9 @@
   .light-blue{
     background: #9BBEFF !important;
   }
+.bg-img{
+  background-image: url(../../asset/About-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
