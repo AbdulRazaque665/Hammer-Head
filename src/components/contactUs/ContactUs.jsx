@@ -1,10 +1,34 @@
-import { Box, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  TextField,
+  Typography,
+  Button,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import ContactImg from "../../asset/contact-background.png";
 import AskedQuestions from "./AskedQuestions";
 
 const ContactUs = () => {
+  const [showDialog, setShowDialog] = useState(false);
+
+  const handleCloseDialog = () => {
+    setShowDialog(false);
+
+    setUserDetail({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: "",
+    });
+  };
+
   const [userDetail, setUserDetail] = useState({
     firstName: "",
     lastName: "",
@@ -21,9 +45,10 @@ const ContactUs = () => {
     serviceErr: false,
     messageErr: false,
   });
+
   const formHandler = (e) => {
     e.preventDefault();
-   
+
     const Errors = {
       firstNameErr: userDetail.firstName === "",
       lastNameErr: userDetail.lastName === "",
@@ -35,29 +60,26 @@ const ContactUs = () => {
 
     setUserError(Errors);
 
+    const hasNoErrors = !Object.values(Errors).includes(true);
+    if (hasNoErrors) {
+      setShowDialog(true);
+    }
   };
 
-  useEffect(()=>{
-    if(userDetail.firstName !== ""){
-      setUserError({...userError, firstNameErr: false})
-    }
-    if(userDetail.lastName !== ""){
-      setUserError({...userError, lastNameErr: false})
-    }
-    if(userDetail.email !== ""){
-      setUserError({...userError, emailEr: false})
-    }
-    if(userDetail.phone !== ""){
-      setUserError({...userError, phoneErr: false})
-    }
-    if(userDetail.service !== ""){
-      setUserError({...userError, serviceErr: false})
-    }
-    if(userDetail.message !== ""){
-      setUserError({...userError, messageErr: false})
-    }
-
-  },[userDetail])
+  useEffect(() => {
+    if (userDetail.firstName !== "")
+      setUserError((prev) => ({ ...prev, firstNameErr: false }));
+    if (userDetail.lastName !== "")
+      setUserError((prev) => ({ ...prev, lastNameErr: false }));
+    if (userDetail.email !== "")
+      setUserError((prev) => ({ ...prev, emailEr: false }));
+    if (userDetail.phone !== "")
+      setUserError((prev) => ({ ...prev, phoneErr: false }));
+    if (userDetail.service !== "")
+      setUserError((prev) => ({ ...prev, serviceErr: false }));
+    if (userDetail.message !== "")
+      setUserError((prev) => ({ ...prev, messageErr: false }));
+  }, [userDetail]);
 
   return (
     <div>
@@ -93,18 +115,17 @@ const ContactUs = () => {
                         value={userDetail.firstName}
                         fullWidth
                         className="bg-white rounded-3"
-                        id="outlined-basic"
                         placeholder="First Name"
                         variant="outlined"
                         style={{
                           border: userError.firstNameErr && "1px solid red",
                         }}
-                        onChange={(e) => {
+                        onChange={(e) =>
                           setUserDetail({
                             ...userDetail,
                             firstName: e.target.value,
-                          });
-                        }}
+                          })
+                        }
                       />
                       {userError.firstNameErr && (
                         <span className="text-danger">
@@ -117,18 +138,17 @@ const ContactUs = () => {
                         value={userDetail.lastName}
                         className="bg-white rounded-3"
                         fullWidth
-                        id="outlined-basic"
                         placeholder="Last Name"
                         variant="outlined"
                         style={{
                           border: userError.lastNameErr && "1px solid red",
                         }}
-                        onChange={(e) => {
+                        onChange={(e) =>
                           setUserDetail({
                             ...userDetail,
                             lastName: e.target.value,
-                          });
-                        }}
+                          })
+                        }
                       />
                       {userError.lastNameErr && (
                         <span className="text-danger">
@@ -144,16 +164,15 @@ const ContactUs = () => {
                         value={userDetail.email}
                         fullWidth
                         className="bg-white rounded-3"
-                        id="outlined-basic"
                         placeholder="Your Email"
                         variant="outlined"
                         style={{ border: userError.emailEr && "1px solid red" }}
-                        onChange={(e) => {
+                        onChange={(e) =>
                           setUserDetail({
                             ...userDetail,
                             email: e.target.value,
-                          });
-                        }}
+                          })
+                        }
                       />
                       {userError.emailEr && (
                         <span className="text-danger">
@@ -166,18 +185,17 @@ const ContactUs = () => {
                         value={userDetail.phone}
                         fullWidth
                         className="bg-white rounded-3"
-                        id="outlined-basic"
                         placeholder="Phone"
                         variant="outlined"
                         style={{
                           border: userError.phoneErr && "1px solid red",
                         }}
-                        onChange={(e) => {
+                        onChange={(e) =>
                           setUserDetail({
                             ...userDetail,
                             phone: e.target.value,
-                          });
-                        }}
+                          })
+                        }
                       />
                       {userError.phoneErr && (
                         <span className="text-danger">
@@ -193,18 +211,17 @@ const ContactUs = () => {
                         value={userDetail.service}
                         fullWidth
                         className="bg-white rounded-3"
-                        id="outlined-basic"
                         placeholder="Service you need"
                         variant="outlined"
                         style={{
                           border: userError.serviceErr && "1px solid red",
                         }}
-                        onChange={(e) => {
+                        onChange={(e) =>
                           setUserDetail({
                             ...userDetail,
                             service: e.target.value,
-                          });
-                        }}
+                          })
+                        }
                       />
                       {userError.serviceErr && (
                         <span className="text-danger">
@@ -217,7 +234,6 @@ const ContactUs = () => {
                     <Grid item xs={12}>
                       <TextField
                         value={userDetail.message}
-                        id="outlined-multiline-static"
                         fullWidth
                         className="bg-white rounded-3"
                         placeholder="Message"
@@ -226,14 +242,14 @@ const ContactUs = () => {
                         style={{
                           border: userError.messageErr && "1px solid red",
                         }}
-                        onChange={(e) => {
+                        onChange={(e) =>
                           setUserDetail({
                             ...userDetail,
                             message: e.target.value,
-                          });
-                        }}
+                          })
+                        }
                       />
-                      {userError.serviceErr && (
+                      {userError.messageErr && (
                         <span className="text-danger">
                           Please enter your message.
                         </span>
@@ -248,6 +264,19 @@ const ContactUs = () => {
                   >
                     Send
                   </button>
+                  <Dialog open={showDialog} onClose={handleCloseDialog}>
+                    <DialogTitle>Submission Successful</DialogTitle>
+                    <DialogContent>
+                      <Typography>
+                        Your message has been sent successfully!
+                      </Typography>
+                    </DialogContent>
+                    <DialogActions>
+                      <Button onClick={handleCloseDialog} color="primary">
+                        Close
+                      </Button>
+                    </DialogActions>
+                  </Dialog>
                 </Box>
               </Grid>
             </Grid>
