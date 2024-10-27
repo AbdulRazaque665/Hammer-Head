@@ -18,7 +18,9 @@ const Careers = () => {
           <Typography variant="h2" className='fw-semibold fs-1' color="initial">2024 Graduate Roles
           Live Now!</Typography>
           <Typography variant="h4" className='fw-medium fs-4 my-4 ' color="initial">Join the number 1 construction company for Graduates</Typography>
+          <a href="mailto:supporthammerhead@gmail.com">
           <button  className="border-0 text-white rounded-5 text-capitalize button-color fw-semibold px-4 py-3">Apply Now!</button>
+          </a>
          </Box>
          </Box>
          </Box>
