@@ -27,7 +27,7 @@ const AboutsUs = () => {
               variant="h5"
               className="fw-normal lh-base mt-4 mt-md-2 mt-lg-3 mb-3"
             >
-              Welcome to [Your Company Name], established in [Year], where we
+              Welcome to HammerHead, established in 2015, where we
               specialize in delivering high-quality construction services
               tailored to your needs. Our mission is to build lasting
               relationships with our clients through integrity and excellence.
