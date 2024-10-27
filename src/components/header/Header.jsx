@@ -105,10 +105,10 @@ const Header = () => {
           </Typography>
           <Box className="" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           <ul className='mx-auto d-flex justify-content-center mb-0  list-unstyled'>
-                <li className=" me-4"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/">Home</NavLink></li>
-                <li className=" me-4"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/aboutus">About Us</NavLink></li>
-                <li className=" me-4"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/whyus">Why Us</NavLink></li>
-                <li className=" me-4"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/careers">Careers</NavLink></li>
+                <li className=" me-5"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/">Home</NavLink></li>
+                <li className=" me-5"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/aboutus">About Us</NavLink></li>
+                <li className=" me-5"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/whyus">Why Us</NavLink></li>
+                <li className=" me-5"><NavLink className="text-decoration-none text-black fw-semibold fs-5 hover" to="/careers">Careers</NavLink></li>
                 <li className=""><NavLink      className="text-decoration-none text-black fw-semibold fs-5 hover" to="/contactus">Contact Us</NavLink></li>
               </ul>
           </Box>
