@@ -1,3 +1,32 @@
 .background-1{
     background-color: #eff6ff;
+    
+}
+.hero-ani-left{
+    animation: myAnimLeft 3s ease 0s 1 normal forwards;
+}
+.hero-ani-right{
+    animation: myAnimRight 3s ease 0s 1 normal forwards;
+}
+@keyframes myAnimLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes myAnimRight {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

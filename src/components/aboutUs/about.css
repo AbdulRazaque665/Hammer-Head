@@ -8,5 +8,50 @@
   background-image: url(../../asset/About-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  
+}
+.about-ani-left{
+  animation: aboutAniLeft 3s ease 0s 1 normal forwards;
+}
+.about-ani-right{
+  animation: aboutAniRight 3s ease 0s 1 normal forwards;
+}
+.our-ani-cards{
+	animation: cards 3s ease 0s 1 normal forwards;
+}
+
+
+@keyframes aboutAniLeft {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes aboutAniRight {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes cards {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }

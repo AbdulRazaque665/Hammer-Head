@@ -59,8 +59,6 @@ const ContactUs = () => {
 
   },[userDetail])
 
-  console.log(userDetail);
-
   return (
     <div>
       <div

@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import Hammerlogo from '../../asset/logo.png';
 import "./header.css"
 
@@ -32,7 +31,7 @@ const Header = () => {
       <Container maxWidth="" >
         <Toolbar disableGutters>
         <NavLink className="d-flex align-items-center text-decoration-none" to="/">
-        <img width="35px" src={Hammerlogo} className="d-lg-block d-md-block d-none me-2" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <img width="35px" src={Hammerlogo} className="d-lg-block d-none me-2"/>
           <Typography
             variant="h6"
             noWrap
@@ -40,7 +39,7 @@ const Header = () => {
             className="logo-text"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: { xs: 'none',sm:'none', md: 'flex' },
               fontWeight: 700,
               textDecoration: 'none',
             }}
@@ -84,16 +83,16 @@ const Header = () => {
                 <li><NavLink className="text-decoration-none" to="/careers">Careers</NavLink></li>
                 <li><NavLink className="text-decoration-none" to="/contactus">Contact Us</NavLink></li>
               </ul>
-              <button  className="d-block d-md-none d-lg-none  mx-auto border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button>
+              <NavLink className="text-decoration-none text-white" to="/contactus"><button  className="d-block d-md-none d-lg-none  mx-auto border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button></NavLink>
             </Menu>
           </Box>   
-          <img src={Hammerlogo} className='d-md-none d-lg-none d-sm-block me-2' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <img src={Hammerlogo} className='d-md-block d-lg-none d-block me-2'/>
           <Typography
             variant="h5"
             noWrap
             component="a"
             className="logo-text"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -114,7 +113,7 @@ const Header = () => {
               </ul>
           </Box>
           <Box>
-            <button  className="d-none d-md-block d-lg-block border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button>
+          <NavLink className="text-decoration-none text-white" to="/contactus"><button  className="d-none d-md-block d-lg-block border-0 text-white rounded-5 text-capitalize button-color fw-semibold">Let's Connect</button></NavLink>
           </Box>
         </Toolbar>
       </Container>

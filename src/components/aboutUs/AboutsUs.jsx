@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import AboutImg from "../../asset/About.png";
 import { Box, Typography } from "@mui/material";
 import "./about.css";
@@ -12,11 +11,11 @@ const AboutsUs = () => {
         <div
           className="row pt-lg-5 px-4 pe-md-3 px-lg-4 d-flex justify-content-center align-items-center flex-column-reverse flex-md-row flex-lg-row"
         >
-          <div className=" mb-5 mb-md-0 mt-5 col-12  col-sm-12 col-md-6 col-lg-4 text-center text-md-start text-lg-start">
-            <img src={AboutImg} alt="About image" />
+          <div className=" mb-5 mb-md-0 mt-5 col-12  col-sm-12 col-md-6 col-lg-4 text-center text-md-start text-lg-start about-ani-left">
+            <img src={AboutImg} alt="About image" className="img-fluid" />
           </div>
 
-          <div className="mt-3 col-12 col-sm-12 col-md-6 col-lg-7">
+          <div className="mt-3 col-12 col-sm-12 col-md-6 col-lg-7 about-ani-right">
             <Typography variant="h3" className="fw-medium mb-2">
               About us
             </Typography>
@@ -46,7 +45,7 @@ const AboutsUs = () => {
           <div className="mt-5 row justify-content-center align-items-center gap-4 ">
             {/* card 1 */}
             <div
-              className="light-blu rounded-5 p-4 text-center col-6 col-md-4 col-lg-3"
+              className="light-blu rounded-5 p-4 text-center col-6 col-md-4 col-lg-3 our-ani-cards"
               style={{
                 width: "260px",
                 height: "270px",
@@ -71,7 +70,7 @@ const AboutsUs = () => {
 
             {/* card 2 */}
             <div
-              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3"
+              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3 our-ani-cards"
               style={{
                 width: "260px",
                 height: "270px",
@@ -96,7 +95,7 @@ const AboutsUs = () => {
 
             {/* card 3 */}
             <div
-              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3"
+              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3 our-ani-cards"
               style={{
                 width: "260px",
                 height: "270px",
@@ -120,7 +119,7 @@ const AboutsUs = () => {
 
             {/* card 4 */}
             <div
-              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3"
+              className="light-blu rounded-5 p-4 text-center  col-6 col-md-4 col-lg-3 our-ani-cards"
               style={{
                 width: "260px",
                 height: "270px",

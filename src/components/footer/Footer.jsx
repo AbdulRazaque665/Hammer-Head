@@ -15,7 +15,7 @@ const Footer = () => {
           <Typography variant="h5" className="footer-txt fs-2">Get Local Info</Typography>
           <Typography variant="h6" className="footer-txt my-4 fs-5">At hammerhead, we specialize in delivering high-quality construction services with a commitment to excellence and innovation. We take pride in our strong client relationships and community engagement. Contact us today to start building your dream!</Typography>
           <Typography variant="h6" className="footer-txt mt-5"> <Icon className="me-2 fs-3" icon="gridicons:location"  /> Cooper Road, Garhi Shahu, Lahore, Punjab</Typography>
-          <Typography variant="h6" className="footer-txt text-nowrap"> <Icon className="me-2 fs-3" icon="skill-icons:gmail-light" /> supporthammerhead@gmail.com</Typography>
+          <Typography variant="h6" className="footer-txt "> <Icon className="me-2 fs-3" icon="skill-icons:gmail-light" /> supporthammerhead@gmail.com</Typography>
          
         </div>
         <div className="col-sm-12 col-md-12 col-lg-3 ">
@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4 ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.5531412481578!2d74.32279277442734!3d31.563876044993446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b4da418797f%3A0xa5156c6effce0f6e!2sCooper%20Rd%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1729784745860!5m2!1sen!2s" width="500" height="420" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-3 img-fluid"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.5531412481578!2d74.32279277442734!3d31.563876044993446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b4da418797f%3A0xa5156c6effce0f6e!2sCooper%20Rd%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1729784745860!5m2!1sen!2s" width="700" height="420" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-3 img-fluid"></iframe>
         </div>
        </div>
       </div>
