@@ -36,9 +36,7 @@ const AskedQuestions = () => {
               What services do you offer?
             </AccordionSummary>
             <AccordionDetails className="fs-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            At HammerHead, we offer a wide range of construction services, including residential and commercial building, renovations, project management, and sustainable solutions. Our team is dedicated to delivering quality craftsmanship and ensuring your project is completed on time and within budget. Let us help bring your vision to life!
             </AccordionDetails>
           </Accordion>
 
@@ -53,9 +51,7 @@ const AskedQuestions = () => {
               How do I get a quote for my project?
             </AccordionSummary>
             <AccordionDetails className="fs-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            To get a quote for your project, simply fill out the contact form on our website or give us a call. We’ll schedule a consultation to discuss your needs, assess the project scope, and provide you with a detailed estimate. We're here to help you every step of the way!
             </AccordionDetails>
           </Accordion>
 
@@ -70,9 +66,7 @@ const AskedQuestions = () => {
               What is your typical project timeline?
             </AccordionSummary>
             <AccordionDetails className="fs-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            Our project timelines vary depending on the scope and complexity of the work. Typically, residential projects can take anywhere from a few weeks to several months, while commercial projects may require even more time. After we assess your specific needs during our initial consultation, we’ll provide you with a more accurate, tailored timeline for your project.
             </AccordionDetails>
           </Accordion>
 
@@ -87,9 +81,7 @@ const AskedQuestions = () => {
               How do you handle permits and inspections?
             </AccordionSummary>
             <AccordionDetails className="fs-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+            We manage all permits and inspections for your project. Our team knows local regulations and ensures compliance while coordinating with inspectors for timely approvals. This lets you focus on your project without any hassle.
             </AccordionDetails>
           </Accordion>
         </Box>
